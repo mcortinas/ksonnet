@@ -1,6 +1,6 @@
 apiVersion: 0.1.0
 kind: ksonnet.io/registry
 libraries:
-  io.ksonnet.mcortinas.cassandra-statefulset-gke:
+  cassandra-statefulset-gke:
     path: cassandra
     version: master
