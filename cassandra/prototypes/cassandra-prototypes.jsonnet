@@ -6,7 +6,7 @@
 // @param name string Name of the prototype
 // @optionalParam namespace string default Description of optional param
 
-local cassandra = import 'https://github.com/mcortinas/ksonnet/blob/master/cassandra-statefulset-gke/cassandra-statefulset-gke.libsonnet';
+local cassandra = import 'https://github.com/mcortinas/ksonnet/blob/master/cassandra/cassandra.libsonnet';
 local namespace = import 'param://namespace';
 local appName = import 'param://name';
 
