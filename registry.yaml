@@ -4,3 +4,6 @@ libraries:
   cassandra:
     path: cassandra
     version: master
+  example:
+    path: example
+    version: master
