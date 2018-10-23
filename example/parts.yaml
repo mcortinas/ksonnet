@@ -1,0 +1,6 @@
+apiVersion: 0.0.1
+kind: ksonnet.io/parts
+name: example
+description: Registry ksonnet for example
+author: Marc Cortinas Val
+license: Apache 2.0

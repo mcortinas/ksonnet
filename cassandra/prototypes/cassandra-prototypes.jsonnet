@@ -6,6 +6,7 @@
 // @param name string Name of the prototype
 // @optionalParam namespace string default Description of optional param
 
+//local cassandra = import 'https://github.com/mcortinas/ksonnet/blob/master/cassandra/cassandra.libsonnet';
 local cassandra = import 'https://github.com/mcortinas/ksonnet/blob/master/cassandra/cassandra.libsonnet';
 local namespace = import 'param://namespace';
 local appName = import 'param://name';
@@ -18,13 +19,13 @@ local appName = import 'param://name';
         namespace: namespace,
     },
     spec: {
-        ports: [
+        ports: {
             port: 7199,
             name: jmx
-        ]
+        }
     },
     selector: {
         component: "cassandra"
     },
-    type: { Loadbalancer },
+    type: "Loadbalancer",
 }
