@@ -21,7 +21,7 @@ local appName = import 'param://name';
     spec: {
         ports: [
             port: 80,
-            targetPort: example.parts.port_number()
+            targetPort: example.parts.port_number(),
         ]
     },
     selector: {
